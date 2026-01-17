@@ -47,7 +47,7 @@ function TaskList({ tasks, onToggleTask, onDeleteTask, onEditTask }) {
       </div>
 
       {/* Task list - semantic HTML */}
-      <ul className="task-list" role="list">
+      <ul className="task-list">
         {tasks.map((task) => (
           <TaskItem
             key={task.id}

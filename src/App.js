@@ -3,8 +3,6 @@ import "./App.css";
 import Header from "./components/layout/Header/Header";
 import TaskForm from "./components/tasks/TaskForm/TaskForm";
 import TaskList from "./components/tasks/TaskList/TaskList";
-import FilterTabs from "./components/tasks/FilterTabs/FilterTabs";
-import SearchBar from "./components/tasks/SearchBar/SearchBar";
 import useLocalStorage from "./hooks/useLocalStorage";
 
 function App() {
