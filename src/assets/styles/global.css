@@ -9,11 +9,12 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
-  color: var(--dark-color);
+  background: linear-gradient(135deg, #1a1f2e 0%, #0f1419 100%);
+  color: var(--light-color);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
 /* Focus styles for accessibility */

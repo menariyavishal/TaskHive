@@ -1,0 +1,56 @@
+.filter-tabs {
+  display: flex;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm);
+  background-color: var(--light-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.filter-tab {
+  flex: 1;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 2px solid var(--gray-light);
+  background-color: transparent;
+  color: var(--gray-color);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+}
+
+.filter-tab:hover {
+  border-color: var(--primary-color);
+  background-color: rgba(20, 184, 166, 0.1);
+  transform: translateY(-2px);
+}
+
+.filter-tab.active {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  box-shadow: 0 4px 8px rgba(20, 184, 166, 0.3);
+}
+
+.filter-count {
+  padding: 0.15rem 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.filter-tab.active .filter-count {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .filter-tabs {
+    flex-direction: column;
+  }
+}
